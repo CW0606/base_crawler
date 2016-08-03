@@ -17,6 +17,7 @@ class BaseCrawler(object):
     IMAGE_FILE_PATH = 'image_file_path'
     VERIFY_IMAGE = 'verify_image'
     IS_OK = 2000
+    DELETE_FILE_FAIL = 1009
     FILE_NOT_EXISTS = 1008
     FILE_SAVE_FAIL = 1007
     IMAGE_IS_NONE = 1006
@@ -155,7 +156,17 @@ class BaseCrawler(object):
                 BaseCrawler.STATUS_KEY: BaseCrawler.FILE_NOT_EXISTS,
                 BaseCrawler.MSG_KEY: 'file not exists!!'
             }
-        self._delete_verify_code(file_path=file_path)
+        try:
+            self._delete_verify_code(file_path=file_path)
+        except Exception as e:
+            return {
+                BaseCrawler.STATUS_KEY: BaseCrawler.DELETE_FILE_FAIL,
+                BaseCrawler.MSG_KEY: 'delete file fail!!'
+            }
+        return {
+            BaseCrawler.STATUS_KEY: BaseCrawler.IS_OK,
+            BaseCrawler.MSG_KEY: 'delete file success!!'
+        }
 
 
 class TestBaseCrawler(TestCase):
@@ -190,6 +201,19 @@ class TestBaseCrawler(TestCase):
                          result.get(BaseCrawler.MSG_KEY))
         # 测试url 为空
 
-    def test_save_verify_code(self):
+    def test_save_and_delete_verify_code(self):
         """测试存储函数"""
-        pass
+        url = 'http://login.beibei.com/checkcode/show.html'
+        image = self.crawler.get_verify_code(self.crawler.request,
+                                             url=url, data=None)
+        verify_content = image.get(BaseCrawler.VERIFY_IMAGE)
+        result = self.crawler.save_verify_code(image=None)
+        self.assertEqual(result.get(BaseCrawler.STATUS_KEY),
+                         BaseCrawler.IMAGE_IS_NONE)
+        result = self.crawler.save_verify_code(verify_content)
+        self.assertEqual(result.get(BaseCrawler.STATUS_KEY), BaseCrawler.IS_OK,
+                         result.get(BaseCrawler.MSG_KEY))
+        image_path = result.get(BaseCrawler.IMAGE_FILE_PATH)
+        result = self.crawler.delete_verify_code(image_path)
+        self.assertEqual(result.get(BaseCrawler.STATUS_KEY), BaseCrawler.IS_OK,
+                         result.get(BaseCrawler.MSG_KEY))
