@@ -32,10 +32,13 @@ class BaseCrawler(object):
     def __init__(self):
         self.request = requests.Session()
         self.request.headers.update({
-            'Accept': 'text/html, application/xhtml+xml, */*',
+            'Accept': 'application/json, text/javascript, */*; q=0.01',
             'Accept-Encoding': 'gzip, deflate',
+            'Requested-With': 'XMLHttpRequest',
             'Accept-Language': 'en-US, en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3',
-            'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:39.0) Gecko/20100101 Firefox/39.0'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:39.0) Gecko/20100101 Firefox/39.0',
+            'Connection': 'keep-alive',
+            'Referer':'https://reg.jd.com/reg/person?ReturnUrl=http://www.jd.com'
         })
         self.proxies = None
 
@@ -44,6 +47,9 @@ class BaseCrawler(object):
             'http': 'socks5://127.0.0.1:1080',
             'https': 'socks5://127.0.0.1:1080'
         }
+
+    def run(self, phone):
+        pass
 
     def _get_verify_code(self, session, url, data, method='GET'):
         if method == 'POST':
