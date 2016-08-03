@@ -3,6 +3,7 @@ from unittest import TestCase
 import os
 import time
 import requests
+from  bs4 import BeautifulSoup
 
 """
 基础爬虫：
@@ -36,12 +37,19 @@ class BaseCrawler(object):
             'Accept-Language': 'en-US, en;q=0.8,zh-Hans-CN;q=0.5,zh-Hans;q=0.3',
             'User-Agent': 'Mozilla/5.0 (Windows NT 6.3; Win64; x64; rv:39.0) Gecko/20100101 Firefox/39.0'
         })
+        self.proxies = None
+
+    def init_proxies(self):
+        self.proxies = {
+            'http': 'socks5://127.0.0.1:1080',
+            'https': 'socks5://127.0.0.1:1080'
+        }
 
     def _get_verify_code(self, session, url, data, method='GET'):
         if method == 'POST':
-            response = session.post(url=url, data=data)
+            response = session.post(url=url, data=data, proxies=self.proxies)
         else:
-            response = session.get(url=url, params=data)
+            response = session.get(url=url, params=data, proxies=self.proxies)
         if response.status_code == 200:
             return response.content
 
@@ -172,8 +180,7 @@ class BaseCrawler(object):
 class TestBaseCrawler(TestCase):
     def setUp(self):
         self.crawler = BaseCrawler()
-
-        pass
+        self.crawler.init_proxies()
 
     def tearDown(self):
         pass
@@ -217,3 +224,18 @@ class TestBaseCrawler(TestCase):
         result = self.crawler.delete_verify_code(image_path)
         self.assertEqual(result.get(BaseCrawler.STATUS_KEY), BaseCrawler.IS_OK,
                          result.get(BaseCrawler.MSG_KEY))
+
+    def test_proxies(self):
+        """测试代理"""
+        proxies = {
+            'http': 'socks5://127.0.0.1:1080',
+            'https': 'socks5://127.0.0.1:1080'
+        }
+        ip_des = '23.251.45.66'
+        url = 'http://ip.cn'
+        response = self.crawler.request.get(url, proxies=proxies)
+        soup = BeautifulSoup(response.content, 'html5lib')
+        div = soup.find('div', {'class': 'well'})
+        code = div.find('code')
+        ip = code.text
+        self.assertEqual(ip, ip_des, response.content)

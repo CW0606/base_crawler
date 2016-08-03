@@ -18,6 +18,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/base_crawler$Nosetest_TestBaseCrawler_test_save_and_delete_verify_code.coverage" NAME="Nosetest TestBaseCrawler.test_save_and_delete_verify_code Coverage Results" MODIFIED="1470206368654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/base_crawler$Nosetest_TestBaseCrawler_test_save_verify_code.coverage" NAME="Nosetest TestBaseCrawler.test_save_verify_code Coverage Results" MODIFIED="1470205893558" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/base_crawler$Nosetests_in_TestBaseCrawler.coverage" NAME="Nosetests in TestBaseCrawler Coverage Results" MODIFIED="1470208864753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/base_crawler$Nosetest_TestBaseCrawler_test_get_verify_code.coverage" NAME="Nosetest TestBaseCrawler.test_get_verify_code Coverage Results" MODIFIED="1470205355032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -32,11 +33,27 @@
       <file leaf-file-name="base_cralwer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base_cralwer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+            <state relative-caret-position="2242">
+              <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
               <folding>
                 <element signature="e#15#44#0" expanded="true" />
+                <element signature="e#1253#1520#0" expanded="false" />
+                <element signature="e#1595#3448#0" expanded="false" />
+                <element signature="e#3498#3774#0" expanded="false" />
+                <element signature="e#3823#4777#0" expanded="false" />
+                <element signature="e#4908#5643#0" expanded="false" />
+                <element signature="e#5806#5810#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/werkzeug/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="775" column="14" selection-start-line="775" selection-start-column="14" selection-end-line="775" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,7 +206,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="Python tests.Nosetest TestBaseCrawler.test_save_and_delete_verify_code">
+  <component name="RunManager" selected="Python tests.Nosetests in TestBaseCrawler">
     <configuration default="false" name="Nosetest TestBaseCrawler.test_get_verify_code" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -250,6 +267,28 @@
       <option name="METHOD_NAME" value="test_save_and_delete_verify_code" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_METHOD" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Nosetests in TestBaseCrawler" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="base_crawler" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/base_cralwer.py" />
+      <option name="CLASS_NAME" value="TestBaseCrawler" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PARAMS" value="" />
@@ -475,16 +514,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_get_verify_code" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_verify_code" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_and_delete_verify_code" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetests in TestBaseCrawler" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_and_delete_verify_code" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_verify_code" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_get_verify_code" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Nosetests in TestBaseCrawler" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_and_delete_verify_code" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_save_verify_code" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Nosetest TestBaseCrawler.test_get_verify_code" />
       </list>
     </recent_temporary>
   </component>
@@ -502,20 +543,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetest_TestBaseCrawler_test_get_verify_code - 2016.08.03 at 14h 21m 10s.xml">
-      <configuration name="Nosetest TestBaseCrawler.test_get_verify_code" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 14h 59m 40s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestBaseCrawler_test_get_verify_code - 2016.08.03 at 14h 22m 37s.xml">
-      <configuration name="Nosetest TestBaseCrawler.test_get_verify_code" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 14h 59m 41s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestBaseCrawler_test_save_and_delete_verify_code - 2016.08.03 at 14h 39m 12s.xml">
-      <configuration name="Nosetest TestBaseCrawler.test_save_and_delete_verify_code" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 14h 59m 50s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestBaseCrawler_test_save_and_delete_verify_code - 2016.08.03 at 14h 39m 30s.xml">
-      <configuration name="Nosetest TestBaseCrawler.test_save_and_delete_verify_code" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 03m 48s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetest_TestBaseCrawler_test_save_verify_code - 2016.08.03 at 14h 31m 37s.xml">
-      <configuration name="Nosetest TestBaseCrawler.test_save_verify_code" configurationId="tests" />
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 03m 49s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 03m 59s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 14m 56s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 15m 36s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 20m 20s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Nosetests_in_TestBaseCrawler - 2016.08.03 at 15h 21m 10s.xml">
+      <configuration name="Nosetests in TestBaseCrawler" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -557,6 +613,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#44#0" expanded="true" />
+            <element signature="e#1253#1520#0" expanded="false" />
+            <element signature="e#1595#3448#0" expanded="false" />
+            <element signature="e#3498#3774#0" expanded="false" />
+            <element signature="e#3823#4777#0" expanded="false" />
+            <element signature="e#4908#5643#0" expanded="false" />
+            <element signature="e#5806#5810#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -628,12 +690,34 @@
         <state />
       </provider>
     </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/werkzeug/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="775" column="14" selection-start-line="775" selection-start-column="14" selection-end-line="775" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/requests/sessions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="285" column="46" selection-start-line="285" selection-start-column="39" selection-end-line="285" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/base_cralwer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="219" column="0" selection-start-line="219" selection-start-column="0" selection-end-line="219" selection-end-column="0" />
+        <state relative-caret-position="2242">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
           <folding>
             <element signature="e#15#44#0" expanded="true" />
+            <element signature="e#1253#1520#0" expanded="false" />
+            <element signature="e#1595#3448#0" expanded="false" />
+            <element signature="e#3498#3774#0" expanded="false" />
+            <element signature="e#3823#4777#0" expanded="false" />
+            <element signature="e#4908#5643#0" expanded="false" />
+            <element signature="e#5806#5810#0" expanded="false" />
           </folding>
         </state>
       </provider>
