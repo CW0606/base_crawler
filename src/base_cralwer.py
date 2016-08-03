@@ -23,7 +23,7 @@ class BaseCrawler(object):
     FILE_SAVE_FAIL = 1007
     IMAGE_IS_NONE = 1006
     GET_CODE_FAIL = 1005
-    verify_IMAGE_IS_NONE = 1004
+    VERIFY_IMAGE_IS_NONE = 1004
     DATA_TYPE_ERROR = 1003
     URL_IS_WRONG = 1002
     URL_IS_NONE = 1001
@@ -98,7 +98,7 @@ class BaseCrawler(object):
                                                  data=data, method=method)
             if verify_image is None:
                 return {
-                    BaseCrawler.STATUS_KEY: BaseCrawler.verify_IMAGE_IS_NONE,
+                    BaseCrawler.STATUS_KEY: BaseCrawler.VERIFY_IMAGE_IS_NONE,
                     BaseCrawler.MSG_KEY: 'verify_image is none'
                 }
             else:

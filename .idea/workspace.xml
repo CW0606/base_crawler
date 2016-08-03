@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1d33ecc-12d8-41fc-a2bc-05f2a67f1e80" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jdjr_crawler.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/base_cralwer.py" afterPath="$PROJECT_DIR$/src/base_cralwer.py" />
     </list>
     <ignored path="base_crawler.iws" />
@@ -33,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="base_cralwer.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="base_cralwer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/base_cralwer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+            <state relative-caret-position="148">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#15#44#0" expanded="true" />
                 <element signature="e#1473#1740#0" expanded="false" />
@@ -61,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdjr_crawler.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jdjr_crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jdjr_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="158">
@@ -86,8 +84,8 @@
       <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
         <entry file="file:///Library/Python/2.7/site-packages/werkzeug/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14611">
-              <caret line="775" column="14" selection-start-line="775" selection-start-column="14" selection-end-line="775" selection-end-column="14" />
+            <state relative-caret-position="7234">
+              <caret line="776" column="25" selection-start-line="776" selection-start-column="25" selection-end-line="776" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -128,8 +126,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/base_cralwer.py" />
         <option value="$PROJECT_DIR$/src/jdjr_crawler.py" />
+        <option value="$PROJECT_DIR$/src/base_cralwer.py" />
       </list>
     </option>
   </component>
@@ -796,20 +794,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/image/1470205896.png" />
-    <entry file="file:///Library/Python/2.7/site-packages/werkzeug/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14611">
-          <caret line="775" column="14" selection-start-line="775" selection-start-column="14" selection-end-line="775" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/requests/sessions.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jdjr_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="e#15#51#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -821,10 +821,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/werkzeug/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7234">
+          <caret line="776" column="25" selection-start-line="776" selection-start-column="25" selection-end-line="776" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/base_cralwer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+        <state relative-caret-position="148">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="e#15#44#0" expanded="true" />
             <element signature="e#1473#1740#0" expanded="false" />
@@ -833,16 +841,6 @@
             <element signature="e#4043#4997#0" expanded="false" />
             <element signature="e#5128#5863#0" expanded="false" />
             <element signature="e#6026#6030#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/jdjr_crawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
